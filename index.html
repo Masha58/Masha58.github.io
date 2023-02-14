@@ -12,9 +12,6 @@
 <body>
     <div class="bg-primary text-white text-center pb-5" style="background-image: url('ressources/fond.jpg');">
 
-        <!--<img src="ressources/fond.jpg" class="img-fluid" />-->
-
-
         <nav class="navbar navbar-expand-sm navbar-dark mb-5" style="background:rgba(120,120,120,0.5)">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="ressources/logo.png" width="30" height="30"> Portfolio</a>
@@ -24,13 +21,13 @@
                 <div class="collapse navbar-collapse" id="mynavbar">
                     <ul class="navbar-nav me-auto ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="" style="color:azure">Projects</a>
+                            <a class="nav-link" href="#projects" style="color:azure">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="" style="color:azure">About me</a>
+                            <a class="nav-link" href="#projects" style="color:azure">About me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="" style="color:azure">CV</a>
+                            <a class="nav-link" href="#projects" style="color:azure">CV</a>
                         </li>
                     </ul>
                 </div>
@@ -40,7 +37,7 @@
         <div id="div_band" class="container pt-5 text-start" style="margin-top:8%;">
             <p class="fs-1 text-light pt-5 text-uppercase fw-bold">Welcome to my portfolio</p>
             <p class="fs-3 text-light pb-3">Here you will find the developments I have made in the last years.</p>
-            <button type="button" class="btn btn-lg btn-light"> <i class="fas fa-map"></i> Discover</button>
+            <a href="#projects"><button type="button" class="btn btn-lg btn-light"> <i class="fas fa-map"></i>  Discover</button></a>
         </div>
     </div>
 
@@ -48,10 +45,10 @@
         <div class="row">
 
             <div class="col-sm-8">
-                <h2>KeyPlan</h2>
+                <h2 id="projects">KeyPlan</h2>
                 <h5>App for projects management, 2022</h5>
                 <p>
-                    KeyPlan is an application that allows, in the manner of Jira, to manage the current projects of a user.
+                    KeyPlan is an application that allows, like Jira, to manage the current projects of a user.
                     Each type of project is identified by a tag (software, task or plugin) and can be categorized into 3 categories: to do, doing, done.
                     A dashboard is available in a second tab to summarize the user's projects.
                     The user's data is stored in a small local database.
@@ -60,17 +57,17 @@
                 <div class="text-center"><img src="ressources/keyplan.png" class="img-fluid Small shadow"></div>
 
 
-                <h2 class="mt-5">Plugin Revit</h2>
+                <!--<h2 class="mt-5">Addin Outlook</h2>
                 <h5>Title description, 2022</h5>
                 <p>Some text..</p>
-                <p><strong>Programming languages: </strong>Android Studio, Java</p>
-                <div class="text-center"><img src="ressources/projet_standard.png" class="img-fluid Small shadow"></div>
+                <p><strong>Programming languages: </strong>C#</p>
+                <div class="text-center"><img src="ressources/projet_standard.png" class="img-fluid Small shadow"></div>-->
 
 
                 <h2 class="mt-5">Mobile App SpaceX</h2>
-                <h5>Title description, 2022</h5>
-                <p>Some text..</p>
-                <p><strong>Programming languages: </strong>Android Studio, Java</p>
+                <h5>SpaceX News, 2022</h5>
+                <p>A mobile application that, thanks to SpaceX's APIs, can display certain information about the company's news, rockets and upcoming launches.</p>
+                <p><strong>Programming languages: </strong>Android Studio, Java, Kotlin</p>
                 <div class="text-center"><img src="ressources/spaceX.png" class="img-fluid"></div>
 
 
@@ -115,23 +112,15 @@
                 <p>
                     My name is Justine Seguin, I am a french software engineer.
                     I like a lot of different domains of computer science: development, data analysis, artificial intelligence...
-                    I'm interested in a little bit of everything. You will find here the different projects I have done in the last years and months.
+                    I'm interested in a little bit of everything. You will find here the different projects I have done in the last years.
                 </p>
                 <p class="text-secondary"><i class="fas fa-file"></i><a style="color: rgb(128 128 128); text-decoration:none" href="ressources/CV_Justine_SEGUIN_Deu.pdf" download> Download German CV</a></p>
                 <p class="text-secondary"><i class="fas fa-file"></i><a style="color: rgb(128 128 128); text-decoration:none" href="ressources/CV_Justine_SEGUIN_Francais.pdf" download> Download French CV</a></p>
                 <h3 class="mt-5">Some Links</h3>
-                <p>Lorem ipsum dolor sit ame.</p>
                 <ul class="nav nav-pills flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active bg-secondary" href="https://www.lemoniteur.fr/article/ingerop-accelere-sur-l-hydrogene-avec-un-outil-de-conception-dedie.2254196">Pos'Hy'</a>
+                        <a class="nav-link active bg-secondary" href="https://www.lemoniteur.fr/article/ingerop-accelere-sur-l-hydrogene-avec-un-outil-de-conception-dedie.2254196">Pos'Hy</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-secondary" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-secondary" href="#">Link</a>
-                    </li>
-
                 </ul>
                 <hr class="d-sm-none">
             </div>
@@ -150,8 +139,8 @@
 
             <div class="text-start">
                 <p class="text-secondary">Useful links</p>
-                <p>LinkedIn</p>
-                <p>GitHub</p>
+                <p><a class="text-light" href="https://www.linkedin.com/in/justine-seguin-ab680a1b9/">LinkedIn</a></p>
+                <p><a class="text-light" href="https://github.com/Masha58">GitHub</a></p>
             </div>
 
         </div>
